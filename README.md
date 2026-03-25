@@ -2,6 +2,7 @@
 A robust Command Line Interface (CLI) tool for executing Market and Limit orders on the Binance Futures Testnet. This project focuses on API security, modular architecture, and structured logging.</b>
 
 📂 Project Structure:
+```bash
 trading_bot/
 ├── bot/
 │   ├── client.py           # Core Binance API interaction logic
@@ -13,3 +14,5 @@ trading_bot/
 ├── LICENSE                 # MIT License
 ├── README.md               # Documentation
 └── requirements.txt        # Project dependencies
+```bash
+🛠️ Installation & Setup
