@@ -14,5 +14,10 @@ trading_bot/
 ├── LICENSE                 # MIT License
 ├── README.md               # Documentation
 └── requirements.txt        # Project dependencies
-```bash
+```
 🛠️ Installation & Setup
+1. Clone the repository
+```bash
+git clone [https://github.com/AdarshCSSNM/binance-futures-trading-bot.git](https://github.com/AdarshCSSNM/binance-futures-trading-bot.git)
+```
+
