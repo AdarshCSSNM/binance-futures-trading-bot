@@ -20,6 +20,33 @@ trading_bot/
 └── requirements.txt        # Project dependencies
 
 🛠️ Installation & Setup
+
 Clone the repository
 git clone [https://github.com/AdarshCSSNM/binance-futures-trading-bot.git](https://github.com/AdarshCSSNM/binance-futures-trading-bot.git)
 cd binance-futures-trading-bot
+
+Install dependencies
+pip install -r requirements.txt
+
+Configure Environment Variables
+Rename .env.example to .env and add your Binance Testnet credentials:
+# Windows
+copy .env.example .env
+# Linux/macOS
+cp .env.example .env
+
+🚀 Use Cases & Execution
+1. Market Execution
+For immediate entry at the current market price. Useful for strategies requiring instant liquidity.
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --qty 0.005
+
+2. Limit Execution
+For tactical entry at a specific price target. Orders remain open until the target price is reached.
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --qty 0.005 --price 85000
+
+📝 Key Implementation Features
+Error Handling: Implemented logic to intercept APIError(code=-4164) (Minimum Notional). This ensures orders meet the Binance requirement (typically >100 USDT) before rejection.
+
+Audit Logging: Every transaction is recorded in bot_activity.log with a timestamp, order ID, and the full JSON response from the exchange for transparency.
+
+Credential Security: Built with python-dotenv to ensure API Secret Keys are never hardcoded or committed to version control.
