@@ -50,9 +50,8 @@ For tactical entry at a specific price target.
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --qty 0.005 --price 85000
 ```
 <b>📝 Key Implementation Features:<br></b>
-<br>
-1.Error Handling: Implemented logic to intercept APIError(code=-4164) (Minimum Notional) to ensure orders meet the >100 USDT requirement.
+1. Error Handling: Implemented logic to intercept APIError(code=-4164) (Minimum Notional) to ensure orders meet the >100 USDT requirement.
 
-2.Audit Logging: Every transaction is recorded in bot_activity.log with a timestamp, order ID, and the full JSON response.
+2. Audit Logging: Every transaction is recorded in bot_activity.log with a timestamp, order ID, and the full JSON response.
 
-3.Credential Security: Built with python-dotenv to ensure API Secret Keys are never hardcoded or committed to version control.
+3. Credential Security: Built with python-dotenv to ensure API Secret Keys are never hardcoded or committed to version control.
