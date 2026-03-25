@@ -32,7 +32,7 @@ Installation
 Clone the repository:
 
 Bash
-git clone https://github.com/yourusername/trading-bot-binance.git
+git clone https://github.com/AdarshCSSNM/binance-futures-trading-bot.git
 cd trading-bot-binance
 Install dependencies:
 
