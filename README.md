@@ -38,7 +38,7 @@ Linux / macOS:
 ```bash
 cp .env.example .env
 ```
-🚀 Use Cases & Execution
+<b>🚀 Use Cases & Execution</b><br>
 1. Market Execution
 For immediate entry at the current market price.
 ```bash
@@ -49,7 +49,7 @@ For tactical entry at a specific price target.
 ```bash
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --qty 0.005 --price 85000
 ```
-📝 Key Implementation Features
+<b>📝 Key Implementation Features<br></b>
 Error Handling: Implemented logic to intercept APIError(code=-4164) (Minimum Notional) to ensure orders meet the >100 USDT requirement.
 
 Audit Logging: Every transaction is recorded in bot_activity.log with a timestamp, order ID, and the full JSON response.
