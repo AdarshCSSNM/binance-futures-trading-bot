@@ -20,19 +20,26 @@ trading_bot/
 └── requirements.txt        # Project dependencies
 
 🛠️ Installation & Setup
-
 Clone the repository
+```bash
 git clone [https://github.com/AdarshCSSNM/binance-futures-trading-bot.git](https://github.com/AdarshCSSNM/binance-futures-trading-bot.git)
+```bash
+```bash
 cd binance-futures-trading-bot
+```bash
 
 Install dependencies
+```bash
 pip install -r requirements.txt
+```bash
 
 Configure Environment Variables
 Rename .env.example to .env and add your Binance Testnet credentials:
 # Windows
+```bash
 copy .env.example .env
 # Linux/macOS
+```bash
 cp .env.example .env
 
 🚀 Use Cases & Execution
